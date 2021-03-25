@@ -1,11 +1,12 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 const Hero = (props)=> {
 
     return (
         <header style={{backgroundImage: `url("${props.image}")` }}>
-            <h1>{props.team}</h1><br/>
-            <h3>Est:{props.year}</h3>
+            <Fade bottom><h1>{props.team}</h1></Fade><br/>
+            <Fade bottom> <h3>Est:{props.year}</h3></Fade>
         </header>
     )
 

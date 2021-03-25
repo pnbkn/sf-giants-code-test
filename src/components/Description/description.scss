@@ -1,4 +1,4 @@
-.description {
+.description{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +11,10 @@
     font-size: 1.1rem;
     background-color: $color-secondary;
     grid-area: desc;
+    p{
+       color: $color-tertiary;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {

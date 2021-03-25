@@ -11,4 +11,6 @@ nav {
     background-color: $color-secondary;
     border-bottom: 1px solid $color-primary;
     grid-area: nav;
+    font-weight: bolder;
+    z-index: 12;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Fade from 'react-reveal/Fade';
 
 const Footer = (props)=> {
     return (
@@ -12,8 +13,8 @@ const Footer = (props)=> {
             </ul>
             </div>
             <div className="address">
-                <h5>{props.name}<br/>
-                {props.location}</h5>
+                <Fade bottom><h5>{props.name}<br/></h5></Fade>
+                <Fade bottom cascade><h5>{props.location}</h5></Fade>
             </div>
         </footer>
     )

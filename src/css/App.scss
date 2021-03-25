@@ -35,6 +35,9 @@
       h3{
         font-size: 1rem;
       }
+      p{
+        font-size: 0.8rem;
+      }
     }
 }
 
@@ -67,4 +70,12 @@ code {
   "footer footer footer footer footer footer footer footer footer footer footer footer";
   width: 100%;
   overflow-x: hidden;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+header, section {
+  scroll-snap-align: center;
 }

@@ -32,7 +32,6 @@ class App extends React.Component {
 
   render() {
     const {giants} = this.state;
-    console.log("GIANTS ", giants)
     return( 
       <div className="container">
         <Navigation initials={giants.strTeamShort}/>

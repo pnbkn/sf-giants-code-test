@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    color: $color-primary;
+    height: 50px;
+    padding: 1rem;
+    background-color: $color-secondary;
+    border-bottom: 1px solid $color-primary;
+    grid-area: nav;
+}

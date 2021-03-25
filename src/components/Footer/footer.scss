@@ -1,0 +1,42 @@
+.footer {
+    display: grid;
+    grid-area: footer;
+    background-color: $color-secondary;
+    color: $color-tertiary;
+    border-top: 3px solid $color-primary;
+    overflow: hidden;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    width: 100vw;
+    height: 40vh;
+    grid-template-areas: 
+    "social social social social social social social social social social social social"
+    "address address address address address address address address address address address address";
+
+    .social {
+        grid-area: social;
+        width: 100vw;
+
+    }
+    .address {
+        grid-area: address;
+        text-align: center;
+    }
+    .social, address{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social ul {
+       display: flex;
+       justify-content: space-between;
+       width: 12rem;
+       align-items: center;
+
+       a {
+        color: $color-primary;
+        font-size: 2rem; 
+    }
+    }
+}
